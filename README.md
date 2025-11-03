@@ -10,4 +10,5 @@
     1. dieta.py
   
     Criado as rotas raizes dos respectivos documentos.
-1. Criando os models e o banco de dados (em andamento)
+1. models e o banco de dados criados.
+1. criando rotas para cadastrar informações no banco de dados
