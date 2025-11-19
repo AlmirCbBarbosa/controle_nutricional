@@ -13,11 +13,17 @@
 1. models e o banco de dados criados.
 1. criando rotas para cadastrar informações no banco de dados
     1. rota para criar pessoa;
-    1. criando a criptografia no arquivo main.
+        1. criando a criptografia de senha.
+        1. enviando a resposta com o código correto.
+        1. criado schema para entrada de dados de pessoa
 
 ## Erros
-1. Ao criar o algoritmo de criptografia, foi encontrado incompatibilidade com o modulo bcrypt >4.x (estava instalado a versão
+1. criando a criptografia de senha -> Ao criar o algoritmo de criptografia, foi encontrado incompatibilidade com o modulo bcrypt >4.x (estava instalado a versão
 5.0). Para corrigir este erro instala a versão 4.0.1, com o seguinte comando:
 ```bash
     pip install brcrypt==4.0.1
+```
+1. criando schema para entrada de dados de pesso --> para funcionar a validação de email (EmailStr) na SchemaPessoa, foi necessario instalar este módulo do Pydantic, através do comando:
+```bash
+    pip install "pydantic[email]"
 ```
