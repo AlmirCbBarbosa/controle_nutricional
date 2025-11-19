@@ -12,3 +12,4 @@
     Criado as rotas raizes dos respectivos documentos.
 1. models e o banco de dados criados.
 1. criando rotas para cadastrar informações no banco de dados
+    1. rota para criar pessoa;

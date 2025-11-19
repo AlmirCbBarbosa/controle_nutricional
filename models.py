@@ -10,7 +10,7 @@ Base = declarative_base()
 #Criando as classes que darão origem aos bancos de dados
 
 #pessoa
-class Usuario(Base):
+class Pessoa(Base): #estava Usuario
     __tablename__ = "pessoa"
 
     id = Column("id", Integer, primary_key=True, autoincrement=True)
