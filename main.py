@@ -1,5 +1,15 @@
 from fastapi import FastAPI
-app = FastAPI()
+from passlib.context import CryptContext # modulo de criptografia
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+SECRET_KEY = os.getenv("SECRET_KEY")
+
+
+app = FastAPI() #para ativar o servidor, use o comando: uvicorn main:app --reload
+
+bcrypt_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 #adicionando as variaveis router
 from pessoa_routes import pessoa_router
