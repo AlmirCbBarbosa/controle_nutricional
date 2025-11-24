@@ -23,7 +23,8 @@
 ```bash
     pip install brcrypt==4.0.1
 ```
-1. criando schema para entrada de dados de pesso --> para funcionar a validação de email (EmailStr) na SchemaPessoa, foi necessario instalar este módulo do Pydantic, através do comando:
+1. criando schema para entrada de dados de pessoa --> para funcionar a validação de email (EmailStr) na SchemaPessoa, foi necessario instalar este módulo do Pydantic, através do comando:
 ```bash
     pip install "pydantic[email]"
 ```
+# continuar aula 5

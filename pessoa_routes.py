@@ -26,4 +26,4 @@ async def criar_pessoa(pessoa_schema: PessoaSchema, session: Session = Depends(p
         session.commit()
         return {"mensagem": f"pessoa criada com sucesso! {pessoa_schema.email}"}
     
-    # continuar aula 4 28:00
+    
